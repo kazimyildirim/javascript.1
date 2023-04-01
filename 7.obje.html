@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>javascript</title>
+    <style>
+        .header{
+            text-align: center;
+            font-family: sans-serif;
+            font-size: 18px;
+            background: red;
+        }
+        .container{
+            text-align: center;
+            font-size: 30px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="header">
+    <h1> javascript</h1>
+
+    </div>
+    <hr>
+    <div class="container">
+
+
+    </div>
+    <script>
+     /* var calisan = {
+        isim:"kazım",
+        soyisim:"yıldırım",
+        numara:1234,
+        diller: ["php,","java","c++"],
+        isimBilgileri : function(){
+            return "isim: "+ this.isim +  " soyisim: " + this.soyisim
+        }
+     };
+
+    console.log(calisan.isim);
+    console.log(calisan.soyisim);
+    console.log(calisan.diller);
+    console.log(calisan.isimBilgileri());
+    --------------------------------*/ 
+    
+
+ /*   var calisan = new Object();
+ calisan.isim= "kazım";
+ calisan.soyisim="yıldırım";
+ calisan.isimBilgileri= function(){
+    return "isim Bilgileri: " + this.isim + " " + this.soyisim
+ };
+ console.log(calisan.isim);
+ console.log(calisan.soyisim);
+ console.log(calisan.isimBilgileri());
+ -----------------------------------*/
+ 
+ function calisan(isim,soyisim,numara){
+    this.isim = isim;
+    this.soyisim = soyisim;
+    this.numara = numara;
+    this.bilgileriGöster = function(){
+        return "İsim: " + this.isim + "\nSoyisim : " + this.soyisim + "\nNumara : " + this.numara
+    }
+}
+ var calisan1 = new calisan("kazım","yıldırım",12345);
+ var calisan2 = new calisan("mehmet","ertem",6789);
+    console.log(calisan1.bilgileriGöster());
+    console.log(calisan2.bilgileriGöster());
+    
+
+    
+
+
+
+
+    </script>
+    
+</body>
+</html>
